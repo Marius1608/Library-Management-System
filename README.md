@@ -72,7 +72,3 @@ All data is saved as JSON in the auto-generated `Data/` folder:
 - Ensure write permissions in the app's directory
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License.
