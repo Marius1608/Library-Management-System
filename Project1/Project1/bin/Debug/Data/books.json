@@ -1,0 +1,14 @@
+[
+  {
+    "Id": "f959229f-79c9-4ae0-86fd-70940b5e77e7",
+    "Title": "Programare C#",
+    "Author": "John Smith",
+    "ISBN": "978-1234567890",
+    "TotalQuantity": 5,
+    "AvailableQuantity": 5,
+    "PublicationDate": "2023-01-15T00:00:00",
+    "Publisher": "Editura Tehnica",
+    "Genre": "Programming",
+    "Description": "O carte excelenta despre programarea \u00EEn C#"
+  }
+]
