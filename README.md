@@ -1,99 +1,78 @@
-Running Instructions - Library Management System
-Setup and Configuration
+# 📚 Library Management System
 
-Open the Solution:
+A multi-layered console-based C# application for managing books and loans in a library.  
+Includes an innovative book recommendation engine based on user preferences and reading history.
 
-Open the Project1.sln file in Visual Studio
-Ensure the project loads successfully
+---
 
+## ⚙️ Setup Instructions
 
-Build the Solution:
+### 🧩 Requirements
+- Visual Studio 2019 or later
+- .NET Framework 4.7.2 or newer
 
-Select Build > Build Solution from the menu
-Verify that the build completes without errors
+### 🚀 Getting Started
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Marius1608/Library-Management-System.git
+   ```
+2. Open `Project1.sln` in Visual Studio  
+3. Build the solution (`Build > Build Solution` or `Ctrl+Shift+B`)  
+4. Run the app (`F5` or click Start)
 
-Run the Application:
+---
 
-Press F5 or click the Start button in Visual Studio
-The application will open in a console window displaying the main menu
+## 🧱 Project Structure
 
+```
+📁 Models         → Book and Loan entities  
+📁 Repositories   → JSON-based data access layer  
+📁 Services       → Business logic  
+📄 Program.cs     → Console UI
+```
 
+---
 
+## 💾 Data Storage
 
-Application Structure
-The solution follows a multi-layer architecture:
+All data is saved as JSON in the auto-generated `Data/` folder:
+- `books.json` – all book data
+- `loans.json` – all loan records
 
-Models: Contains Book and Loan entities
-Repositories: Implements data access with JSON storage
-Services: Contains business logic for book and loan management
-Program.cs: Implements the console interface
+---
 
-Data Storage
-The application stores data in JSON files in a Data directory which is automatically created in the application's execution path:
+## 🛠️ Features
 
-books.json: Contains all book information
-loans.json: Stores loan records
+### 📘 Book Management
+- View, search, add, update, and delete books
 
+### 📕 Loan Management
+- Borrow and return books  
+- View active and overdue loans
 
+### 💡 Recommendation System
+- **Personalized Recommendations** based on borrower history
+- **Popular Books** list based on borrowing frequency
+- **Similar Books** engine by genre/author
 
+---
 
-To test the basic requirements:
+## ✅ How to Test
 
-Book Management:
+1. Add books of various genres/authors  
+2. Create and return loans for different users  
+3. Use Menu `3` options to test the recommendation system
 
-Add new books (Main Menu > 1 > 3)
-View all books (Main Menu > 1 > 1)
-Search books by title/author/genre (Main Menu > 1 > 2)
-Update book information (Main Menu > 1 > 4)
-Delete books (Main Menu > 1 > 5)
+---
 
+## 🛠️ Troubleshooting
 
-Loan Management:
+- If using a .NET version < 4.7.2, async file I/O uses `Task.Run`
+- Ensure write permissions in the app's directory
 
-Borrow books (Main Menu > 2 > 4)
-Return books (Main Menu > 2 > 5)
-View active loans (Main Menu > 2 > 2)
-View overdue loans (Main Menu > 2 > 6)
+---
 
+## 📄 License
 
-
-
-Innovative Feature: Book Recommendation System
-For requirement 7, I developed a comprehensive book recommendation system that enhances the library experience with three key capabilities:
-
-Personalized Recommendations (Main Menu > 3 > 2):
-
-The system analyzes a borrower's history to identify their preferred genres and authors
-Based on this analysis, it suggests books they haven't yet read that match their preferences
-If a borrower has no history, it falls back to recommending popular books
-
-
-Popular Books Tracking (Main Menu > 3 > 1):
-
-The system keeps track of borrowing frequency for all books
-Generates a list of most frequently borrowed titles
-Helps librarians understand collection usage patterns and reader preferences
-
-
-Similar Books Discovery (Main Menu > 3 > 3):
-
-When viewing a specific book, the system can find other titles with the same genre or author
-Uses a weighted algorithm that prioritizes books that match both genre and author
-Facilitates exploration of related content in the library collection
-
-
-
-
-To test this innovative feature:
-
-First add several books with varying genres and authors
-Create multiple loans for different borrowers
-Return some books to have a mixed history
-Use the recommendation features in Menu 3 to see the recommendations generated
-
-This recommendation system adds significant value beyond basic CRUD operations by creating a personalized discovery experience for patrons and improving collection utilization through data-driven insights.
-Troubleshooting
-If you encounter any issues:
-
-If using .NET Framework version earlier than 4.7.2, the application uses Task.Run for file operations
+This project is licensed under the MIT License.
