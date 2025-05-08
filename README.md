@@ -20,6 +20,7 @@ The application will open in a console window displaying the main menu
 
 
 
+
 Application Structure
 The solution follows a multi-layer architecture:
 
@@ -33,6 +34,8 @@ The application stores data in JSON files in a Data directory which is automatic
 
 books.json: Contains all book information
 loans.json: Stores loan records
+
+
 
 
 To test the basic requirements:
@@ -52,6 +55,7 @@ Borrow books (Main Menu > 2 > 4)
 Return books (Main Menu > 2 > 5)
 View active loans (Main Menu > 2 > 2)
 View overdue loans (Main Menu > 2 > 6)
+
 
 
 
@@ -77,6 +81,7 @@ Similar Books Discovery (Main Menu > 3 > 3):
 When viewing a specific book, the system can find other titles with the same genre or author
 Uses a weighted algorithm that prioritizes books that match both genre and author
 Facilitates exploration of related content in the library collection
+
 
 
 
